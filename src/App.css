@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.u-bg-yellow {
+  background-color: #FFBD00;
+  color:#000;
+  font-size: 1rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section {
+  padding: 3rem 0;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  width: clamp(320px,60%,500px);
+  height: 400px;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  overflow-y: scroll;
+  scrollbar-width: hide;
+  align-items: start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5em;
 }
+
+.list-item {
+  position: relative;
+  height: 100px;
+  padding: 0.5rem;
+  display: flex;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  justify-content: start;
+  align-items: end;
+  letter-spacing: -0.03em;
+}
+
+.u-text-grey {
+  color: rgba(0,0,0, 0.75)
+}
+
+.u-text-orange {
+  color: #FF5400;
+}
+
+.u-font-weight-600 {
+  font-weight: 600;
+}
+
+.u-ml-0\.25 {
+  margin: 0.25rem;
+}
+
+.btn {
+  flex-shrink: 0;
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 50vw;
+  background-color: #FF5400;
+  border: transparent;
+  font-size: 1rem;
+  font-family: 'Inter';
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cc-close {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
+  width: 3.5rem;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  height: auto;
+  padding: 0.25rem 0;
+  border-radius: 50vw;
+  background-color: #FF0E0E;
+  border: transparent;
+  font-size: 0.9rem;
+  font-family: 'Inter';
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+
